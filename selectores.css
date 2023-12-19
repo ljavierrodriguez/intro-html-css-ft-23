@@ -1,0 +1,170 @@
+/* Comentarios  */
+/* */
+:root {
+    --color-principal: #18c072;
+    --color-secundario: #0c9254;
+    --width-base: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* Selector ID */
+#box {
+    background-color: var(--color-principal); /* Usando variables en css */
+    width: var(--width-base);
+    height: 100px;
+}
+
+/* Selector Clase */
+.menu {
+    list-style: none;
+    color: var(--color-secundario);
+}
+
+.titulo {
+    color: var(--color-principal);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.a {
+    color: #18c072;
+}
+.b {
+    color: #0c9254;
+}
+
+/* Selector Tipo */
+h1 {
+    color: blue;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Agrupar Selectores */
+h1, h2, h3 {
+    color: red;
+}
+
+h4, h5, h6 {
+    color: blue;
+}
+
+/* Selector Descendiente */
+
+div p {
+    color: green;
+}
+
+.menu li {
+    background-color: cadetblue;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Selector Adyacente */
+h3 + p {
+    text-align: justify;
+    width: 50%;
+    padding: 2px;
+    background-color: #d5c9c9;
+    color: #999999;   
+}
+
+/* Selector Hijo */
+div > span {
+    font-size: 10px;
+}
+
+ol > li {
+    text-transform: uppercase;
+}
+
+/* Selector Hermano */
+h3 ~ p {
+    text-align: justify;
+    width: 50%;
+    padding: 2px;
+    background-color: #d5c9c9;
+    color: #999999;   
+}
+
+/* Selector Atributo */
+input[type=text]{
+    display: block;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #0c9254;
+}
+
+
+/* Pseudo Clases */
+a {
+    width: 120px;
+    padding: 5px 10px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px;
+}
+
+a:hover {
+    background-color: var(--color-principal);
+}
+
+#box:hover {
+    background-color: red;
+}
+
+input:focus {
+    color: blue;
+}
+
+.menu :nth-child(1) {
+    color: brown;
+}
+
+.menu :first-child {
+    color: red;
+}
+
+/* Pseudo Elementos */
+.saludo::before {
+    content: 'Hola, ';
+}
+
+.saludo::after {
+    content: 'Luis Javier'
+}
+
+p::first-letter {
+    font-size: 50px;
+    background-color: #18c072;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.icons {
+
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    background-color: #18c072;
+    font-size: 2rem; /* 16px */
+}
+
+/* Medidas */
+/* 
+px
+em
+rem
+*/
+
+.espacio1 {
+    font-size: .5em;
+}
