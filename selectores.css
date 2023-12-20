@@ -8,6 +8,7 @@
 
 body {
     font-size: 16px;
+    margin: 0;
 }
 
 /* Selector ID */
@@ -150,7 +151,7 @@ p::first-letter {
 }
 
 .icons {
-
+    box-sizing: border-box;
     width: 100%;
     height: 30px;
     padding: 10px;
@@ -167,4 +168,19 @@ rem
 
 .espacio1 {
     font-size: .5em;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    margin: 0 3px;
+}
+
+.icons  :nth-child(4) {
+    justify-self: flex-end;
+    color: red;
 }
