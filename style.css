@@ -1,0 +1,117 @@
+/* 
+
+@media tipo-de-medio y (condicion) {
+    ...
+}
+
+
+*/
+/* Cambios Basicos */
+/* 
+
+body {
+    font-size: 16px;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media print {
+    body {
+        color: #0000ff;
+    }
+} 
+
+*/
+
+/* Usando las preferencias del usuario */
+/* 
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (prefers-color-scheme: dark){
+    body {
+        background-color: #333333;
+        color: #ffffff;
+    }
+} 
+*/
+
+/* Segun tamaño del dispositivo */
+
+body {
+    background-color: blueviolet;
+    color: white;
+}
+
+.movil {
+    display: none;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    display: flex;
+}
+
+.box .box-left {
+    width: 100px;
+    height: 100px;
+    background-color: #e22b0e;
+}
+
+.box .box-right {
+    width: 100px;
+    height: 100px;
+    background-color: #32c378;
+}
+
+@media screen and (max-width: 540px){
+    body {
+        background-color: #13a092;
+        color: white;
+    }
+
+    .movil {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 970px){
+    body {
+        background-color: #1583be;
+        color: white;
+    }
+
+    .box {
+        width: 100px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box .box-left {
+        width: 100px;
+        height: 100px;
+        background-color: #e22b0e;
+    }
+    
+    .box .box-right {
+        width: 100px;
+        height: 100px;
+        background-color: #32c378;
+    }
+}
+
+@media screen and (min-width: 971px) and (max-width: 1024px){
+    body {
+        background-color: #b06712;
+        color: white;
+    }
+}
